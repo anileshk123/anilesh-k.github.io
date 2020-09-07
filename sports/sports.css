@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.button{
+    width: 100%;
+    margin: 0 auto;
+    background: url(s3.jpg);
+    background-size: cover;
+    align-content: center;
+    height: 100vh;
+}
+.button a{
+    top: 30vh;
+    align-content: center;
+    width: 180px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    padding-block: 20px 0;
+    margin: 5% 5%;
+    padding : 15px 15px;
+    border-radius: 8%;
+    display: inline-block;
+    background: papayawhip;
+    left: 50px;
+}
+.button a:hover{
+    color: papayawhip;
+    text-decoration: none;
+    background: rgb(233, 53, 7);
+}
+a{
+    box-shadow : 0 0 30px skyblue;
+}
+.bsktbl{
+    font-size: 30px;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    background: url(b1.jpeg);
+    width: 100%; 
+    background-size: cover;  
+}
+.bsktbl p{
+    align-content: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+    position: relative;
+    padding: 23% 0% 0% 45%;
+    height: 100px;
+    text-align: right;
+    
+}
+.ftbl{
+    font-size: 30px;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    background: url(ft1.jpg);
+    width: 100%;
+    background-size: cover;  
+}
+.ftbl p{
+    align-content: flex-end;
+    text-align: right;
+    color: white;
+    width: 100%;
+    position: absolute; 
+    width: 650px;
+    height: 200px;
+    font-size: 20px;
+    text-align: right;
+    color:black;
+    margin-left: 49%;
+    margin-top: 25%;
+    
+    
+}
+.vlybl{
+    font-size: 30px;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    background: url(vl1.jpeg);
+    width: 100%;
+    background-size: cover;  
+}
+.vlybl p{
+    align-content: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+    position: relative;
+    width: 80%;
+    height: 80px;
+    text-align: left;
+    color:black;
+    
+}
+.Cricket{
+    font-size: 30px;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    background: url(cr1.jpeg);
+    width: 100%;
+    background-size: cover;  
+}
+.Cricket p{
+    align-content: center;
+    text-align: center;
+    color: white;
+    width: 50%;
+    position: absolute;
+    width: 650px;
+    height: 100px;
+    text-align: right;
+    color: blue;
+    margin-left: 50%;
+    margin-top: 25%;
+    margin-right:auto%;
+}
