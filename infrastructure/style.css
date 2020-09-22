@@ -131,6 +131,7 @@
   }
   
   .section-c .gallery {
+    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
@@ -147,7 +148,8 @@
   
   .section-c .gallery img,
   .section-c .gallery a {
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
+    background-color: yellow;
   }
   
