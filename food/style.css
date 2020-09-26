@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(bg1.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    margin: 15% 20%;
+    text-align: center;
+    align-content: center;
+}
+.text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text h1:hover{
+    color: yellow;
+}
+.text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.text a:hover{
+    background: #fff;
+    color: #333;
+}
+.more{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.more h1{
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    margin: 5% 20%;
+    text-align: center;
+    align-content: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.more h1:hover{
+    color: red;
+}
+.more h3{
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    margin: 15% 20%;
+    text-align: justify;
+    align-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+@media (max-width:600px){
+   
+.text{
+    width: 100%;
+    height: auto;
+    margin: 30% 0;
+}
+.text h1 {
+    font-size: 30px;
+}
+.more h1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.more h3{
+    width: 100%;
+    height: auto;
+    margin: 30% 0;
+}
