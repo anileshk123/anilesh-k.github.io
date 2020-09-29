@@ -1,0 +1,332 @@
+@charset "utf-8";
+body{
+ margin:0px;
+ padding:0px;
+ background-color: #8bcddd;
+ overflow-x: hidden; 
+ width: 100%;
+}
+ul{
+ list-style:none;
+}
+a{
+ text-decoration:none;
+}
+#main{
+ padding:30px 50px;
+ position:relative;
+ width:100%;
+ height: 100vh;
+ box-sizing: border-box;
+ background-size: cover; 
+ background-repeat: no-repeat;
+ background-image: url("image/bg.jpg");
+ background-attachment: fixed;
+
+}
+nav{
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ text-transform: uppercase;
+ font-weight: 600;
+ letter-spacing: 2px;
+ font-family: calibri;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width:100%;
+ box-sizing: border-box;
+ padding: 10px 50px;
+ background-color:#F4F7FF;
+ box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+ z-index: 1;
+}
+ 
+.menu{
+ display: flex;
+}
+.menu li a{
+ padding: 10px 15px;
+ color:black;
+ font-size: 12px;
+ 
+}
+
+.menu li a:hover{
+ background-color:#2c2626;
+ color:rgb(218, 210, 210)!important;
+ font-weight: bold;
+ transition: all ease 0.4s;
+}
+.home{
+  width: 350px;
+	position: absolute;
+	right: 180px;
+	border-radius: 45px;
+	top: 220px;
+}
+.name{
+ font-family: calibri;
+ width: 500px;
+ position: absolute;
+ left: 20%;
+ top: 53%;
+ transform: translate(-20%,-50%);
+}
+.name p:nth-child(1),.name .details{
+ color:#025c72;
+ font-size: 20px;
+}
+.name h1{
+ font-family:Poppins;
+ font-size: 40px;
+ letter-spacing: 3px;
+ color:#021920;
+}
+.name h1:hover{
+  font-size: 45px;
+  color: royalblue ;
+  transition: all ease 0.8s;
+}
+.l{
+	width: 32px;
+	border-radius: 50%;
+	position: relative;
+	left: 100px;
+	top: 400px;
+}
+.lo{
+	width: 32px;
+	border-radius: 50%;
+	position: relative;
+	left: 110px;
+	top: 400px;
+}
+.log{
+	width: 32px;
+	border-radius: 50%;
+	position: relative;
+	left: 120px;
+	top: 400px;
+}
+.link{
+  margin: auto auto;
+  padding: 6rem 3rem;
+}
+#about{
+    width:100%;
+    height: 100vh;
+    background-image: url("image/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow-y: hidden;
+    background-attachment: fixed;
+   }
+   .about-text{
+    width: 40%;
+   }
+   .about-text h1{
+    font-family: poppins;
+    font-size: 3.3rem;
+    color:#194247;
+    top: 60px;
+    left: 35%;
+    position: relative;
+   }
+   .about-text p{
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    color:rgba(38, 67, 80, 0.9);
+    top: 50px;
+    left: 10%;
+    position: relative;
+   }
+#goals{
+    width:100%;
+    height: 100vh;
+    background-image: url("image/goalsblur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow-y: hidden;
+    background-attachment: fixed;
+    font-size: 2rem;
+    
+   }
+   .gtext{
+    width: 60%;
+    
+   }
+   .gtext h1{
+    font-family: poppins;
+    font-size: 2.5rem;
+    color:#07051d;
+    top: 110px;
+    left: 400px;
+    position: relative;
+   }
+   .gtext li{
+    color:#010b29;
+    font-size: 1.2rem;
+    top: 180px;
+    left: 450px;
+    position: relative;
+   }
+#academics{
+    width:100%;
+    height: 100vh;
+    background-image: url("image/aca.jpg");
+    overflow: hidden;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.atext h2{
+  font-family: verdana;
+    font-size: 1.1rem;
+    position: relative;
+    top: 40px;
+    right: 400px;
+    color:#09151d;
+}
+.atext{
+  margin: 80px auto;
+  width: 250px;
+  border-left: 2px solid #04505a;
+  padding: 0 20px 0 30px;
+}
+.box{
+  background-color: #dde0e9;
+  padding: 5px 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  height: 110;
+  margin-bottom: 20px;
+}
+.box:hover{
+  background-color: skyblue;
+  padding: 7px 40px;
+  transition: all ease-in-out 0.4s;
+}
+.box::before{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(223, 225, 233);
+  border: 3px solid rgb(51, 46, 46);
+  position: absolute;
+  top:7px;
+  left: -40px;
+}
+#skills{
+    width:100%;
+    height: 100vh;
+    background-image: url("image/skil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    position: relative;
+    list-style: none;
+    background-attachment: fixed;
+    
+   }
+   .stext{
+     width: 500px;
+     margin: 60px auto;
+   }
+   .stext h2{
+    font-family: verdana;
+    font-size: 2rem;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    color:#13517a;
+   } 
+   .stext li{
+     margin: 20px 0;
+   }
+   .bar{
+     background: #f6fafa;
+     display: block;
+     height: 8px;
+     border: 1px solid rgba(44, 192, 250, 0.03);
+     border-radius: 3px;
+     overflow: hidden;
+     box-shadow: 0 0 10px #02299b;
+   }
+   .bar span{
+     height: 7px;
+     float: left;
+     background: #2904fa;
+     transition: all ease-in-out 0.2s;
+   }
+   .bar span:hover{
+    background: #04fa62;
+    transition: all ease-in-out 0.4s;
+   }
+   .html{
+     width: 90%;
+   }
+   .css{
+    width: 75%;  
+  }
+  .python{
+    width: 80%;
+  }
+  .java{
+    width: 60%;
+  }
+  #experience{
+    width:100%;
+    height: 120vh;
+   }
+   .etext{
+    width: 60%;
+   }
+   .etext h1{
+    font-family: poppins;
+    font-size: 2rem;
+    color:#011113;
+    top: 20px;
+    left: 500px;
+    position: relative;
+   }
+   .etext h2{
+    font-family: poppins;
+    font-size: 1.3rem;
+    color:#152527;
+    top: 25px;
+    left: 200px;
+    position: relative;
+   }
+   .etext h3{
+    font-family: poppins;
+    font-size: 1.1rem;
+    color:#152527;
+    top: 25px;
+    left: 200px;
+    position: relative;
+   }
+   .etext p{
+    font-family: sans-serif;
+    font-size: 1.0rem;
+    color:rgba(22, 66, 83, 0.9);
+    top: 40px;
+    left: 200px;
+    position: relative;
+   }
+   .end{
+    height: 15px;
+    width: 100%;
+    top: 80px;
+    position: relative;
+    background: #28acf8;
+    left: 0px;
+   }
