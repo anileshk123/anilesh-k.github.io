@@ -1,0 +1,50 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">DASHBOARD</h1>
+   
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Categories</h6>
+        <a href="{% url 'core:addCategory' %}"  style="float: right;" class="btn btn-primary btn-user" >Create</a>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+                Add Categories
+        </div>
+      </div>
+    </div>
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Menu Items </h6>
+        <a href="{% url 'core:addMenuItem' %}"  style="float: right;" class="btn btn-primary btn-user" >Create</a>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+                Add item
+        </div>
+      </div>
+    </div>
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">ROOMS/TABLE </h6>
+        <a href="{% url 'core:addQrcode' %}"  style="float: right;" class="btn btn-primary btn-user" >Create</a>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+                Add Table
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Rooms / Table Management</h1>
+   
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Rooms/Table</h6>
+        <a href="{% url 'core:addQrcode' %}" style="float: right;" class="btn btn-primary btn-user" >Create</a>
+        {% if messages %}
+          
+        {% for message in messages %}
+        {% if message.tags == 'success' %}
+            <p class="messages alert-success" style="text-align: center;">{{ message }}</p>
+        {% else %}
+         <p class="messages alert-danger" style="text-align: center;">{{ message }}</p>
+         {% endif %}
+        {% endfor %}
+    
+        {% endif %}
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" data-order='[[ 1, "asc" ]]' data-page-length='50' cellspacing="0">
+            <thead>
+              <tr>
+                <th>Table-ID</th>
+                <th>Identifier Name</th>
+                <th>Description</th>
+                <th>Qr-Code</th>
+                <th>Actions</th>
+                
+              </tr>
+            </thead>
+            
+            <tbody>
+            {% for each in data %}
+              <tr>
+                <td>{{ each.qr_code_id }}</td>
+                <td>{{ each.name }}</td>
+                <td>{{ each.description }}</td>
+                <td><a href="{{ each.qr_code.url }}" target="blank" class="btn btn-success btn-circle btn-sm" data-toggle="modal" data-target="#myModal{{each.id}}">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                  <a href="#"  class="btn btn-info btn-circle btn-sm">
+                    <i class="fas fa-download"></i>
+                  </a>
+                </td>
+                <td><a href="#" class="btn btn-warning btn-circle btn-sm">
+                    <i class="fas fa-edit"></i>
+                  </a>
+                    <a href="#" class="btn btn-danger btn-circle btn-sm" onclick="return confirm('Are you sure you want to delete this?')">
+                    <i class="fas fa-trash"></i>
+                  </a>
+                </td>
+                
+              </tr>
+              <div class="modal fade" id="myModal{{each.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" id="{{each.id}}" >
+                  <div class="modal-content" >
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">QR CODE : <small>{{ each.name }}</small></h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     
+                    </div>
+                    <div class="modal-body text-center pagination-centered">
+                      <img src="{{ each.qr_code.url }}"/>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+{% endblock %}

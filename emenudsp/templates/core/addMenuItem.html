@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card-body p-0">
+      <!-- Nested Row within Card Body -->
+      <div class="row">
+        
+        <div class="col-lg-7">
+          <div class="p-5">
+            <div class="text-center">
+              <h1 class="h4 text-gray-900 mb-4">Add Item</h1>
+            </div>
+            <form class="user" action="{% url 'core:addMenuItem' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+              <div class="form-group row">
+               
+                <div class="col-sm-6">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control form-control-user" onchange="ValidateName();" name="name" id="name" placeholder=Item Name" required>
+                <p id="er_msg"></p>
+                </div>
+              </div>
+              <div class="form-group row">
+               
+                <div class="col-sm-6">
+                  <label for="name">Price</label>
+                  <input type="text" class="form-control form-control-user" onchange="ValidateName();" name="price" id="price" placeholder=Price Name" required>
+                <p id="er_msg"></p>
+                </div>
+              </div>
+              <div class="form-group row">
+               
+                <div class="col-sm-6">
+                  <label for="name">Category ID</label>
+                  <select class="form-control" name="category" id="category">
+                    {% for each in data %}
+                    <option value="{{ each.id }}">{{ each.name }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Description</label>
+                <textarea class="form-control" rows="3" name="description" id="exampleFormControlTextarea1" placeholder="Description" required></textarea>
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Image</label>
+                <input type="file" name="media" class="form-control" multiple>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-user ">
+                SUBMIT
+              </button>
+              <hr>
+              
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
+{% block script%}
+    <script>
+        function ValidateName() {
+
+            var name = document.getElementById('name').value;
+            document.getElementById('name').value = name.trim();
+            name = document.getElementById('name').value;
+            {#var inValid = /\s/;#}
+            {#// name = name.replace(/\s/g, '')#}
+            if(name === ''){
+                document.getElementById("er_msg").innerHTML ="No space please and don't leave it empty";
+                document.getElementById("er_msg").style.color = "red";
+                document.getElementById("name").value = "";
+                return false;
+            }
+            else{
+                document.getElementById("er_msg").innerHTML ="";
+                return true;
+            }
+
+     }
+    </script>
+{% endblock %}

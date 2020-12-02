@@ -1,0 +1,68 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+<div id="mySidenav" class="sidenav">
+  <h3>eMenu</h3>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  {% for cat in category %}
+  <a href="#">{{ cat.name }}</a>
+  {% endfor %}
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Pricing</h1>
+  <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+</div>
+
+<div class="container">
+  
+  <div class="card-deck mb-3 text-center">
+    {% for menu in emenu %}
+   
+    <div class="card mb-4 shadow-sm">
+     
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">{{menu.name}}</h4>
+      </div>
+      <div class="card-body">
+        
+        <ul class="list-unstyled mt-3 mb-4">
+          <img src="{{menu.media_image}}" width="50%">
+        </ul>
+         <h1 class="card-title pricing-card-title">₹{{menu.price}} <small class="text-muted">/ mo</small></h1>
+          <!-- <form action="api/cart/" method="POST">
+         {% csrf_token %} -->
+        <input type="hidden" name="qr_code" value="hjws5tbp" id="">
+        <input type="hidden" name="menuitem" value="{{ menu.id }}" id="menuitem">
+        <input type="hidden" name="quantity" value=1 id="">
+         <button class="btn btn-lg btn-block btn-outline-primary" id="btncart">Add To Cart</button>
+        
+      </div>
+      
+    </div>
+  
+    {% endfor %}
+  </div>
+
+
+</div>
+{% endblock %}
+{% block javascript %}
+  <script>
+    $("#btncart").click(function () {
+    alert('sssssssssssss')
+      $.ajax({
+        url: '/addtocart/',
+        data: {
+          'menuitem': $('#menuitem').val();
+        },
+        dataType: 'json',
+        success: function (data) {
+          if (data.data) {
+            alert("A user with this username already exists.");
+          }
+        }
+      });
+
+    });
+  </script>
+{% endblock %}
