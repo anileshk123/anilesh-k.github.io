@@ -1,0 +1,93 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-------------This Link add the Favicon---------- -->
+  <link rel="shortcut icon" href="logo/1486506231-game-sports-football-ball-basketball_81475.ico">
+  <!-------------Link the Swiper css file----------  -->
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+              <!-- ----------S1 is the main css file of this Html file----------- -->
+  <link rel="stylesheet" type="text/css" href="css/s1.css">
+
+   <!-- ----------This links the bootstrap Nav-Bar and makes the website responsive-------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" >
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+                    <title>Sports club</title>
+
+</head>
+<section id="swiper1" style="background: url(images/nnh.jpg); background-position: center; background-size: cover;background-attachment: fixed;" height = "50px">
+  <div class="swiper-container" height="10%">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+      <div class="imgBx">
+      <img src="images/m1.jpg" style="border-radius: 40px">
+      </div>
+      <div class="details">
+      <h3>BasketBall</h3><br><center><a href="#"><span>Click</span></a></center>
+      </div>
+      </div>
+
+      <div class="swiper-slide">
+      <div class="imgBx">
+      <img src="images/m2.jpg" style="border-radius: 40px">
+      </div>
+      <div class="details">
+      <h3>FootBall</h3><br><center><a href="#"><span>Click</span></a></center>
+      </div>
+      </div>
+
+      <div class="swiper-slide">
+      <div class="imgBx">
+      <img src="images/m3.jpg" style="border-radius: 40px">
+      </div>
+      <div class="details">
+      <h3>VolleyBall</h3><br><center><a href="#"><span>Click</span></a></center>
+      </div>
+      </div>
+
+      <div class="swiper-slide">
+      <div class="imgBx">
+      <img src="images/m4.jpg" style="border-radius: 40px">
+      </div>
+      <div class="details">
+      <h3>Cricket</h3><br><center><a href="#"><span>Click</span></a></center>
+      </div>
+      </div>
+
+  
+      
+      </div>
+ 
+    </div>
+    <!------------This Will Add Pagination -------------------->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- --------------JS linked File of Swiper---------------- -->
+  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 60,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  
+</section>
