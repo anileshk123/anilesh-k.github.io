@@ -183,11 +183,7 @@ button:focus{
 	background: #d0a772;
 	color: #ffffff;
 }
-.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-	background: #d0a772;
-	color: #ffffff;
-	border-radius: 4px;
-}
+ 
 
 .navbar-expand-lg .navbar-nav .dropdown-menu{
 	border: none;
