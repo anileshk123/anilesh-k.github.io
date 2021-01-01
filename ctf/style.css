@@ -1,0 +1,18 @@
+body{
+    background: rgb(0, 0, 0);
+    color: white;
+    align-items: center;
+}
+
+.ques{
+    background: rgb(34, 33, 33);
+    color: rgb(17, 112, 196);
+    align-items: center;
+    text-align: center;
+}
+
+.form{
+    background: rgb(22, 22, 22);
+    width: 100%;
+    
+}

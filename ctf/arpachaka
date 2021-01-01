@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <input type='text' id='txt' >
+    <input type='text' id='check' oninput='check()'>
+    <input type="button" value="submit" onclick="myfunc()">
+    <script>
+        function myfunc(){
+            word=document.querySelector('#txt').value;
+       if(word=="hello"){
+           window.location.replace('https://www.google.com'); 
+       }
+       else
+       {
+           alert("Sorry! You are wrong");
+       }
+    }
+    function check(){
+        word1=document.querySelector('#check').value;
+   if(word1=="check"){
+    alert("you are right");
+   }
+   else
+   {
+   }
+}
+    </script>
+</body>
+</html>
