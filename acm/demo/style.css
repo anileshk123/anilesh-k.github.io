@@ -1,0 +1,18 @@
+body{
+    background: #50b7e2;
+    color: white;
+    align-items: center;
+}
+
+.ques{
+    background: #50b7e2;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.form{
+    background: #50b7e2;
+    width: 100%;
+    
+}
