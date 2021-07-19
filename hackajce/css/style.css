@@ -556,6 +556,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f7f7f7;
 }
 
+#faq{
+  background-color: #50b7e2;
+}
+
 /* Featured Services Section
 --------------------------------*/
 #featured-services {
