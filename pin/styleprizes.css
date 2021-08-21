@@ -181,9 +181,14 @@ h2 {
   height: 75%;
 }
 h2 {
-  font-size: 30px;
+  font-size: 28px;
 
 }
+.btn-large {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
 
 @media (max-width: 330px) {
   .carousel,
@@ -197,3 +202,8 @@ h2 {
 h3 {
   font-size: 18px;
 }
+.btn-large {
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
