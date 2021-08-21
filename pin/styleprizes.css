@@ -60,11 +60,11 @@ p {
 }
 
 .btn-rounded {
-  border-radius: 70px;
+  border-radius: 1  0px;
 }
 
 .btn-large {
-  padding: 10px 35px;
+  padding: 6px 25px;
   font-size: 18px;
 }
 
@@ -117,7 +117,7 @@ p {
 }
 
 .bottom-icon {
-  height: 10%;
+  height: 20%;
   background-color: #000;
   text-align: center;
 }
@@ -139,9 +139,7 @@ h2 {
   font-size: 30px;
 
 }
-#hbut{
-  
-}
+
 
 @media (max-width: 767px) {
   .carousel,
@@ -180,10 +178,10 @@ h2 {
   .carousel,
 .item,
 .active {
-  height: 90%;
+  height: 75%;
 }
 h2 {
-  font-size: 40px;
+  font-size: 30px;
 
 }
 
