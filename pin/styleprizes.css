@@ -189,9 +189,11 @@ h2 {
   .carousel,
 .item,
 .active {
-  height: 85%;
+  height: 75%;
 }
 h2 {
   font-size: 30px;
-
+}
+h3 {
+  font-size: 18px;
 }
