@@ -60,11 +60,11 @@ p {
 }
 
 .btn-rounded {
-  border-radius: 1  0px;
+  border-radius: 70px;
 }
 
 .btn-large {
-  padding: 6px 25px;
+  padding: 10px 35px;
   font-size: 18px;
 }
 
@@ -117,7 +117,7 @@ p {
 }
 
 .bottom-icon {
-  height: 20%;
+  height: 10%;
   background-color: #000;
   text-align: center;
 }
@@ -127,3 +127,73 @@ p {
   font-size: larger;
 }
 
+@media (max-width: 950px) {
+  .carousel,
+.item,
+.active {
+  height: 70%;
+  width: 100%;
+}
+h2 {
+  
+  font-size: 30px;
+
+}
+#hbut{
+  
+}
+
+@media (max-width: 767px) {
+  .carousel,
+.item,
+.active {
+  height: 80%;
+}
+h2 {
+  font-size: 60px;
+
+}
+
+@media (max-width: 574px) {
+  .carousel,
+.item,
+.active {
+  height: 80%;
+}
+h2 {
+  font-size: 60px;
+
+}
+
+@media (max-width: 480px) {
+  .carousel,
+.item,
+.active {
+  height: 80%;
+}
+h2 {
+  font-size: 40px;
+
+}
+
+@media (max-width: 460px) {
+  .carousel,
+.item,
+.active {
+  height: 90%;
+}
+h2 {
+  font-size: 40px;
+
+}
+
+@media (max-width: 330px) {
+  .carousel,
+.item,
+.active {
+  height: 85%;
+}
+h2 {
+  font-size: 30px;
+
+}
