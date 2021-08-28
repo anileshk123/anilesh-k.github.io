@@ -147,10 +147,10 @@ h2 {
   .carousel,
 .item,
 .active {
-  height: 80%;
+  height: 75%;
 }
 h2 {
-  font-size: 60px;
+  font-size: 40px;
 
 }
 
@@ -158,10 +158,10 @@ h2 {
   .carousel,
 .item,
 .active {
-  height: 80%;
+  height: 75%;
 }
 h2 {
-  font-size: 60px;
+  font-size: 30px;
 
 }
 
@@ -169,10 +169,10 @@ h2 {
   .carousel,
 .item,
 .active {
-  height: 80%;
+  height: 72%;
 }
 h2 {
-  font-size: 40px;
+  font-size: 35px;
 
 }
 
@@ -180,20 +180,20 @@ h2 {
   .carousel,
 .item,
 .active {
-  height: 90%;
+  height: 70%;
 }
 h2 {
   font-size: 40px;
 
 }
 
-@media (max-width: 330px) {
+@media (max-width: 331px) {
   .carousel,
 .item,
 .active {
-  height: 85%;
+  height: 75%;
 }
 h2 {
-  font-size: 30px;
+  font-size: 40px;
 
 }
