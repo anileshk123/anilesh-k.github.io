@@ -1538,7 +1538,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
-
+#c1{
+  background: linear-gradient(to right, #50b7e2,#11c98b, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+} 
+#c1:hover{
+  background-position: left bottom;
+  
+}
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
