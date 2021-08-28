@@ -28,10 +28,10 @@ body {
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 80px;
 }
 p {
-  padding: 10px;
+  padding: 25x;
 }
 
 /* Background images are set within the HTML using inline CSS, not here */
@@ -60,7 +60,7 @@ p {
 }
 
 .btn-rounded {
-  border-radius: 70px;
+  border-radius: 78px;
 }
 
 .btn-large {
