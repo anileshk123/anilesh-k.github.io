@@ -197,3 +197,23 @@ h2 {
   font-size: 40px;
 
 }
+
+@media (max-width: 324px) {
+  .carousel,
+.item,
+.active {
+  height: 75%;
+}
+h2 {
+  font-size: 20px;
+}
+h3{
+  font-size: 15px;
+}
+p{
+  font-size: 15px;
+}
+.btn-large {
+  padding: 6px 20px;
+  font-size: 10px;
+}
