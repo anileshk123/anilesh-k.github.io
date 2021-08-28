@@ -1559,8 +1559,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 bubble
 --------------------------------------------------------------*/
 .bub img{
-  width: 10px;
-  animation: bubble 7s ease-in infinite;
+  width: 5px;
+  animation: bubble 12s ease-in infinite;
   
 }
 
@@ -1593,81 +1593,59 @@ bubble
   }
 }
 
-.bub img:nth-child(1){
+.bub img:nth-child(1),.bub img:nth-child(10),.bub img:nth-child(20),.bub img:nth-child(30){
   animation-delay: 2s;
-  width: 15px;
+  width: 8px;
 }
-.bub img:nth-child(2){
+.bub img:nth-child(2),.bub img:nth-child(12),.bub img:nth-child(23),.bub img:nth-child(17){
   animation-delay: 1s;
   width: 12px;
 }
-.bub img:nth-child(3){
+.bub img:nth-child(3),.bub img:nth-child(15),.bub img:nth-child(29),.bub img:nth-child(25){
   animation-delay: 4s;
-  width: 25px;
+  width: 3px;
 }
-.bub img:nth-child(4){
-  animation-delay: 2s;
-  width: 5px;
+.bub img:nth-child(4),.bub img:nth-child(11),.bub img:nth-child(24){
+  animation-delay: 7s;
+  width: 6px;
 }
-.bub img:nth-child(5){
+.bub img:nth-child(5),.bub img:nth-child(18),.bub img:nth-child(28){
   animation-delay: 3s;
-  width: 17px;
+  width: 1px;
 }
-.bub img:nth-child(6){
+.bub img:nth-child(6),.bub img:nth-child(22),.bub img:nth-child(16){
   animation-delay: 1s;
 
 }
-.bub img:nth-child(7){
-  animation-delay: 4s;
-  width: 5px;
+.bub img:nth-child(7),.bub img:nth-child(14),.bub img:nth-child(27){
+  animation-delay: 9s;
+  width: 2px;
 }
-.bub img:nth-child(8){
+.bub img:nth-child(8),.bub img:nth-child(19){
   animation-delay: 2s;
-  width: 15px;
+  width: 4px;
 }
-.bub img:nth-child(){
-  animation-delay: 5s;
-  width: 25px;
+.bub img:nth-child(9),.bub img:nth-child(13),.bub img:nth-child(21){
+  animation-delay: 11s;
+  width: 7px;
 }
 
 
-.bub img:nth-child(1):hover{
-  
+.bub img:nth-child(1):hover,.bub img:nth-child(2):hover,.bub img:nth-child(3):hover,
+.bub img:nth-child(4):hover,.bub img:nth-child(5):hover,.bub img:nth-child(6):hover,
+.bub img:nth-child(7):hover,.bub img:nth-child(8):hover,.bub img:nth-child(9):hover,
+.bub img:nth-child(10):hover,.bub img:nth-child(11):hover,
+.bub img:nth-child(12):hover,.bub img:nth-child(13):hover,.bub img:nth-child(14):hover,
+.bub img:nth-child(15):hover,.bub img:nth-child(16):hover,.bub img:nth-child(17):hover,
+.bub img:nth-child(18):hover,.bub img:nth-child(19):hover,.bub img:nth-child(20):hover,
+.bub img:nth-child(21):hover,.bub img:nth-child(22):hover,.bub img:nth-child(23):hover,
+.bub img:nth-child(24):hover,.bub img:nth-child(25):hover,.bub img:nth-child(26):hover,
+.bub img:nth-child(27):hover,.bub img:nth-child(28):hover,.bub img:nth-child(29):hover{ 
+
   animation-play-state: paused;
-}
-.bub img:nth-child(2):hover{
   
-  animation-play-state: paused;
 }
-.bub img:nth-child(3):hover{
-  
-  animation-play-state: paused;
-  width: 80px;
-}
-.bub img:nth-child(4):hover{
-  
-  animation-play-state: paused;
-}
-.bub img:nth-child(5):hover{
-  
-  animation-play-state: paused;
-}
-.bub img:nth-child(6):hover{
-  
-  animation-play-state: paused; 
-}
-.bub img:nth-child(7):hover{
-  
-  animation-play-state: paused; 
-}
-.bub img:nth-child(8):hover{
-  
-  animation-play-state: paused; 
-}
-.bub img:nth-child(9):hover{
-  
-  animation-play-state: paused; 
-}
+
 
 
 /*--------------------------------------------------------------
