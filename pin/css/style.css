@@ -1538,16 +1538,26 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+
+/*--------------------------------------------------------------
+# Prize card
+--------------------------------------------------------------*/
 #c1{
   background: linear-gradient(to right, #50b7e2,#62bea0d2, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
 } 
+
+
+
 #c1:hover{
   background-position: left bottom;
 }
 
+/*--------------------------------------------------------------
+bubble
+--------------------------------------------------------------*/
 .bub img{
   width: 10px;
   animation: bubble 7s ease-in infinite;
