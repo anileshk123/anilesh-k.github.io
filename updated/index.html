@@ -67,6 +67,8 @@
     <!-- #header -->
 
 
+    
+
    
     <!--==========================
     Intro Section
@@ -781,6 +783,9 @@
         </div>
       </div>
     </footer>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <!-- #footer -->
 
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
@@ -808,5 +813,12 @@
       AOS.init();
       
     </script>
+
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+  </script>
+  
   </body>
 </html>
