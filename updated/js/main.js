@@ -146,7 +146,7 @@ jQuery(document).ready(function( $ ) {
 
 $(function(){
   $("#vertical div.wrap").hover(function(){
-      $(this).stop().animate({top:"-300px"},{queue:false,duration:400});
+      $(this).stop().animate({top:"-150px"},{queue:false,duration:400});
   }, function() {
       $(this).stop().animate({top:"0px"},{queue:false,duration:400});
   });
